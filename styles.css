@@ -203,7 +203,7 @@ body:lang(de) {
 }
 
 @keyframes move {
-    o%{
+    0%{
         width: 72px;
     }
     24%{
@@ -227,6 +227,27 @@ body:lang(de) {
     }
     100%{
         width: 72px;
-        transform: rotate(360deg)
+        transform: rotate(360deg);
+    }
+}
+
+/*** END ***/
+
+/*** GIRL ***/
+
+.girl {
+    background: url(.) no-repeat;
+    width: 120px;
+    height: 120px;
+    margin: auto;
+    animation: little-girl 1s steps(6) infinite; 
+}
+
+@keyframes little-girl{
+    from{
+        background-position: 0 0;
+    }
+    to{
+        background-position: -720px 0;
     }
 }
